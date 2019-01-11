@@ -1,0 +1,237 @@
+
+@media  (min-width: 576px) {
+  .wrapperpos {
+    margin: 47% auto auto 0;
+  }
+  p {
+    font-size: 1em;
+  }
+  #headbg,
+  #footbg {
+    min-width: 576px;
+  }
+}/*MEDIA 576 */
+@media (min-width: 768px) {
+  #headbg,
+  #footbg {
+    min-width: 768px;
+  }
+  
+  .wrapperpos {
+    margin: 37% auto auto 0;
+  }
+  
+  .webuilt {
+    display: inline-block;
+    color: #1366b4;
+    text-align: center;
+    font-size: 3.5em;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .linebar {
+    border-left: 2px solid #000; /* Параметры линии */
+    padding-left: 10px; /* Расстояние от линии до текста */
+  }/*to webuilt*/
+  
+  p#seng {
+    margin-top: -1.9em;
+  }
+  
+  p#bsn {
+    margin-top: -1.9em;
+  }
+  
+}/*MEDIA 768 */
+@media  (min-width: 992px) {
+  .wrapperpos {
+    margin: 30% auto auto 0;
+  }
+  
+  .webuilt {
+    font-size: 2.3em;
+  }
+
+}/*MEDIA 992 */
+@media  (min-width: 1200px) {
+  #headbg {
+    min-width: 1200px;
+    height: 60%;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(227, 232, 238, 1) 1%, rgba(227, 232, 238, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(227, 232, 238, 1) 1%, rgba(227, 232, 238, 1) 50%, rgba(255, 255, 255, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(227, 232, 238, 1) 1%, rgba(227, 232, 238, 1) 50%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e8ee', endColorstr='#00ffffff', GradientType=0); /* IE6-9 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  
+  #footbg {
+    position: absolute;
+    z-index: -1;
+    min-width: 1200px;
+    width: 100%;
+    height: 60%;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(227, 232, 238, 0.9) 50%, rgba(227, 232, 238, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(227, 232, 238, 0.9) 50%, rgba(227, 232, 238, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(227, 232, 238, 0.9) 50%, rgba(227, 232, 238, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#e3e8ee', GradientType=0); /* IE6-9 */
+    left: 0;
+    opacity: 1;
+  }
+  
+  .navcon {
+    margin: 7% 10% auto 6%;
+    white-space: nowrap;
+  }/*position of top container*/
+  #logo {
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: center;/*making <a> centered and so <img> either */
+  }/*LOGO*/
+  
+  .preline {
+    white-space: nowrap;
+  }/*making text inline*/
+  /*----------------------------------------------------------- MENU ----------------------------------------------------------- */
+  .menu {
+    background: transparent;
+    position: relative;
+    top: -2em;
+  }/* MENU position*/
+  
+  .topline {
+    display: flex;
+    position: relative;
+    height: 2px;
+    background-color: #1366b4;
+    width: 100%;
+  }/*solid top line*/
+  
+  .menu ul {
+    display: flex;
+  }/* UL TAG STYLE */
+  
+  .menu ul li a {
+    position: relative; /*making topline fit to the menu*/
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+  }/* <LI> AND <A> */
+  
+  
+  .menu ul li a:hover {
+    
+    background: rgb(123, 203, 244); /* Old browsers */
+    background: -moz-radial-gradient(at 0% 0%, ellipse cover, rgba(123, 203, 244, 1) 0%, rgba(60, 155, 228, 1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(at 0% 0%, ellipse cover, rgba(123, 203, 244, 1) 0%, rgba(60, 155, 228, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at 0% 0%, rgba(123, 203, 244, 1) 0%, rgba(60, 155, 228, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7bcbf4', endColorstr='#3c9be4', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    border-radius: 1%;
+    color: white;
+  }
+  
+  .menu ul li a:focus {
+    color: #0052a0;
+  }
+  
+  /*TOP MENU ANIMATION*/
+  .menu ul li a:after {
+    display: block;
+    position: absolute;
+    width: 0; /*underline width before cursor is hovered*/
+    height: 2px; /*underline height*/
+    bottom: -2px;
+    background-color: #26ccff;
+    content: "";
+    transition: width 0.4s ease-out;
+    z-index: 1; /*to overlay it and make it visible */
+  }
+  
+  .menu li a:after,
+  .menu li a:focus:after {
+    width: 100%;
+  }
+  
+  .menu ul li a:active {
+    color: #0052a0;
+  }
+/*----------------------------------------------------------- MENU END ----------------------------------------------------------- */
+  
+  /*-----------------------ICON BG SHAPES-----------------------*/
+  .wrapperpos {
+    display: flex;
+    margin: 10% auto auto 0;
+    height: max-content;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    width: 70%;
+  }/*SHAPES */
+  .wrapperpos:after {
+    content: '';
+    position: absolute;
+    margin-left: 96%;
+    width: 12%;
+    height: 100%;
+    background: white;
+    transform: skew(-20deg);
+    z-index: -1;
+  } /*miracle*/
+  /*-----------------------ICON BG SHAPES END-----------------------*/
+  
+  .item {
+    margin-left: 15%;
+  }/*all items INTO the shape*/
+  
+  p#wdep {
+    background: url("../img/wdep.png") no-repeat center;
+  }/*icon web development*/
+  
+  
+  p#wdep:hover {
+    background: url("../img/wdep2.png") no-repeat center;
+  }
+  
+  p#mobapp {
+    background: url("../img/app.png") no-repeat center;
+  }/*icon mobile applications*/
+  p#mobapp:hover {
+    background: url("../img/app2.png") no-repeat center;
+  }
+  
+  p#seng {
+    padding-top: 7em;
+    margin-top: 0;
+    background: url("../img/seng.png") no-repeat center;
+  }/*icon service engineering*/
+  p#seng:hover {
+    background: url("../img/seng2.png") no-repeat center;
+  }
+  
+  p#bsn {
+    padding-top: 7em;
+    margin-top: 0;
+    background: url("../img/bsn.png") no-repeat center;
+  }/*icon business analysis and audit*/
+  p#bsn:hover {
+    background: url("../img/bsn2.png") no-repeat center;
+  }
+  
+  .webuilt {
+    font-size: 3em;
+  }
+  
+  .footwrapper {
+    margin-top: 10%;
+  }/* TEXT-CONTAINER  */
+  
+  
+}/*MEDIA 1200 */
+

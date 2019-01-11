@@ -1,0 +1,239 @@
+/*COMMON THINGS*/
+body {
+    font-family: "Roboto", "sans-serif";
+    font-size: 1em;
+    background: #e3e8ee url('../img/imgbg.png') center top no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+                                                        /*GRADIENT BGS*/
+
+#headbg {
+    min-width: 326px;
+    height: 60%;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(227, 232, 238, 1) 1%, rgba(227, 232, 238, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(227, 232, 238, 1) 1%, rgba(227, 232, 238, 1) 50%, rgba(255, 255, 255, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(227, 232, 238, 1) 1%, rgba(227, 232, 238, 1) 50%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e8ee', endColorstr='#00ffffff', GradientType=0); /* IE6-9 */
+    position: absolute;
+    top: 0;
+    left: 0;
+  opacity: 0.7;
+}
+
+#footbg {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  min-width: 326px;
+  width: 100%;
+  height: 50%;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(227, 232, 238, 0.9) 50%, rgba(227, 232, 238, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(227, 232, 238, 0.9) 50%, rgba(227, 232, 238, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(227, 232, 238, 0.9) 50%, rgba(227, 232, 238, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#e3e8ee', GradientType=0); /* IE6-9 */
+  opacity: 0.6;
+}
+
+                                                   /*NAVIGATION CONTAINER*/
+
+.navcon {
+    position: relative;
+}/*behavior: wrapper*/
+#logo {
+  position: absolute;
+  top: 2em;
+  right: -90%;
+}/* LOGO */
+
+/*----------------------------------------------------------- MENU ----------------------------------------------------------- */
+
+button {
+  margin: 2% 0 0 2%;
+  position: absolute;
+  width: 3em;
+  height: 3em;
+}/*position*/
+button:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  z-index: 2;/*over the collapsed menu */
+}/*rewrite toggler*/
+
+.menu {
+  background: #43494c;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  
+}
+
+                                                         /* STYLE */
+
+.menu ul {
+  line-height: 1;
+  margin-top: 1rem;
+  padding: 0;
+  display: block;
+  white-space: nowrap;
+  list-style: none;
+}
+
+                                                     /* UL TAG STYLE */
+
+.menu ul li a {
+  font-size: 1em;
+  color: white;
+  display: flex;
+  padding: .625em;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}/* <LI> AND <A> */
+.menu ul li a:hover {
+  color: #26ccff;
+  cursor: pointer;
+}
+.menu ul li a:active {
+  color: #25bdec;
+}
+
+                                                         /*TOGGLER*/
+
+.navbar-toggler span{
+    width: 1.19em;
+    display: block;
+    height: 2px;
+    margin: 0.3em;
+    background: #1366b4;
+    z-index: 1;
+    transform-origin: top left;
+    transition:  transform 0.5s cubic-bezier(0.0, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.0, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}/*parent last line*/
+
+.navbar-toggler span:first-child {
+  width: 1.5em;
+  background: #26ccff;
+}/*first line*/
+
+.navbar-toggler span:nth-last-child(2) {
+  width: 0.7em;
+  background: #8244be;
+}/*middle line*/
+
+                                              /*----TOGGLER TRANSOFRMATION----*/
+
+ /* Transform all the slices of hamburger*/
+.navbar-toggler[aria-expanded="true"] span:first-child{
+    width: 1.19em;
+    opacity: 1;
+    transform: rotate(45deg);
+    background: #ffffff;
+}/*first one*/
+
+/* hide the middle one. */
+.navbar-toggler[aria-expanded="true"] span:nth-last-child(2){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* and the last one */
+.navbar-toggler[aria-expanded="true"]  span {
+  width: 1.19em;
+  background: #ffffff;
+    transform: rotate(-45deg) translateX(-1.5px); /*translateX is used to make start-point (approximately)equals the first one*/
+  border-radius: 1px;
+}/* att. aria expanded for make it responsive on click */
+
+/*----------------------------------------------------------- MENU ----------------------------------------------------------- */
+
+
+
+                                            /*ICON-LINKS BG SHAPE and POSITION */
+
+.wrapperpos {
+    margin: 90% auto auto 0;
+    position: relative;
+    flex-wrap: nowrap;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background: white;
+    min-height: 10em;
+    opacity: 0.9;
+    width: 100%;
+}
+
+                                                        /* ICON LINKS */
+p{
+  padding-top: 7em; /*making space for bg icons*/
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}/* position of the text in shape */
+
+.posanddeco a{
+    color: black;
+    text-decoration: none;
+}/*text rules*/
+.posanddeco a:hover {
+color: #1366b4;
+}
+
+.preline {
+white-space: pre-line;
+}/*changes to nowrap*/
+
+p#wdep {
+    background: url("../img/wdep.png") no-repeat center;
+}  /*icon web development*/
+p#wdep:hover {
+background: url("../img/wdep2.png") no-repeat center;
+}
+
+p#mobapp {
+ background: url("../img/app.png") no-repeat center;
+} /*icon mobile applications*/
+p#mobapp:hover {
+background: url("../img/app2.png") no-repeat center;
+}
+
+p#seng {
+  padding-top: 9em;
+background: url("../img/seng.png") no-repeat center;
+} /*icon service engineering*/
+p#seng:hover {
+background: url("../img/seng2.png") no-repeat center;
+}
+
+p#bsn {
+  padding-top: 9em;
+background: url("../img/bsn.png") no-repeat center;
+} /*icon business analysis and audit*/
+p#bsn:hover {
+background: url("../img/bsn2.png") no-repeat center;
+}
+
+                                                      /* WE BUILT WEB AND MOBILE APP  */
+.webuilt {
+  display: block;
+  color: #1366b4;
+  text-align: center;
+  font-size: 2.5em;
+  z-index: 0;
+}/*text style*/
+
+.footwrapper {
+    margin-top: 10%;
+}/*position*/
